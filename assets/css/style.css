@@ -1,0 +1,191 @@
+html,
+body {
+  background: #ECEAE4;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+  --bs-navbar-color: #fff;
+  --bs-navbar-brand-color: #fff;
+  --bs-navbar-hover-color: #A55A38;
+  --bs-navbar-disabled-color: #8a8a8a;
+  --bs-navbar-active-color: #fff;  
+  background: #2B2B2B;
+}
+
+.navbar-collapse {
+  display: flex;
+  
+}
+
+/* Main */
+main {
+  flex: 1;
+}
+
+.hero {
+  background: #ECEAE4;
+  padding: 40px 0;
+}
+
+.hero-text h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #2B2B2B;
+}
+
+.hero-lead {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #2B2B2B;
+  max-width: 520px;
+}
+
+.hero-img {
+  max-width: 360px;
+}
+
+.box2 {
+  background: #ECEAE4;
+  color: #2B2B2B;
+}
+
+/* section */
+.features {
+  background: #ab6a4c;
+  color: #fff;
+  padding: 60px 0 40px;
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  line-height: 1;
+  margin-bottom: 16px;
+}
+
+.features h3 {
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.features p {
+  max-width: 300px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+/* seckia 2*/
+.benefits {
+  background: #2B2B2B;
+  color: #fff;
+  padding: 70px 0;
+}
+
+.benefits-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 24px;
+}
+
+.benefits-line {
+  width: 60px;
+  height: 2px;
+  background: #fff;
+  opacity: 0.7;
+  margin: 0 auto 60px;
+}
+
+.benefit {
+  max-width: 600px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.benefit:last-child {
+  margin-bottom: 0;
+}
+
+.benefit-icon {
+  font-size: 1.6rem;
+  line-height: 1;
+  margin-bottom: 18px;
+  color: #fff;
+  opacity: 0.85;
+}
+
+.benefit h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.benefit p {
+  opacity: 0.85;
+  line-height: 1.7;
+}
+
+/*sekcja 3 */
+.fit {
+  background: #ECEAE4;
+  color: #2B2B2B;
+  padding: 70px 0;
+}
+
+.fit-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 24px;
+}
+
+.fit-line {
+  width: 60px;
+  height: 2px;
+  background: #A55A38;
+  margin: 0 auto 60px;
+}
+
+.fit-icon {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #A55A38;
+  font-size: 2.6rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
+.fit h3 {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 28px;
+}
+
+.fit ul {
+  max-width: 420px;
+  margin: 0 auto;
+  padding-left: 20px;
+}
+
+.fit li {
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+
+/* Footer */
+.footer {
+  background: #2B2B2B;
+  color: #fff;
+}
