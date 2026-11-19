@@ -9,6 +9,20 @@ body {
   flex-direction: column;
 }
 
+
+@media (max-width: 767.98px) {
+  body {
+    padding-bottom: 120px;
+  }
+}
+/* padding do policy */
+.notice-end {
+  padding-bottom: 20px;
+}
+
+
+
+
 /* Navbar */
 .navbar {
   --bs-navbar-color: #fff;
@@ -18,6 +32,7 @@ body {
   --bs-navbar-active-color: #fff;  
   background: #2B2B2B;
 }
+
 /*logo*/
 .navbar-brand,
 .navbar-brand:hover,
@@ -33,17 +48,19 @@ body {
   color: #A55A38;
   font-weight: 600;
 }
+
 /* Main */
 main {
   flex: 1;
 }
+
 main {
   padding-top: 100px;
 }
+
 /* narzie kade to tutajmoze sie przyda to jest seci class hero padding: 20px 0; */ 
 .hero {
   background: #ECEAE4;
-  
 }
 
 .hero-text h1 {
@@ -59,18 +76,19 @@ main {
   color: #2B2B2B;
   max-width: 520px;
 }
+
 /* Carousel for all images */
 .carousel-item img {
-    width: 100%;
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
 }
+
 /* do okraglych rogow slide nice-rogi */
 .nice-rogi {
   border-radius: 12px; /* Zaokrąglenie rogów (dobierz wartość do przycisków, np. 8px - 16px) */
   overflow: hidden;    /* Przycina rogi zdjęcia wewnątrz zaokrąglonego boksu */
 }
-
 
 /* old css for hero imag - just rfor remianing the old code in case of need */
 .hero-img {
@@ -78,6 +96,7 @@ main {
   max-width: 220px-280px;
   height: auto;
 }
+
 /* PL: margin-top przesuwa kontener na zewnątrz (tu lekko w górę), a padding zmienia wysokość wewnątrz przycisku */
 /* EN (UK): margin-top shifts the container externally (slightly up here), while padding adjusts height inside the button */
 .hero-actions {
@@ -88,7 +107,6 @@ main {
   padding-top: 8px;
   padding-bottom: 8px;
 }
-
 
 .hero-box1 {
   padding-top: 12px;
@@ -228,9 +246,9 @@ main {
   margin-bottom: 14px;
   line-height: 1.6;
 }
+
 /* sekcja 4 reviews */
 /* Sekcja z opiniami czytelników */
-
 .reviews {
   background: #ECEAE4;
   padding: 60px 0 120px;
@@ -240,7 +258,6 @@ main {
   margin-top: -30px;
   margin-bottom: 40px;
 }
-
 
 .review-card {
   background: #fff;
@@ -286,15 +303,13 @@ main {
 
 /* Sekcja z opiniami czytelników */
 .jump-box {
-  transition: transform 0.3s ease, 
+  transition: transform 0.3s ease;
 }
-
 
 .jump-box:hover {
   /* OPCJA 1: Większe uniesienie w górę (np. zamiast -8px dajesz -16px lub -20px) */
   transform: translateY(-26px);
 }
-
 
 /* Footer */
 .footer {
@@ -306,7 +321,6 @@ main {
 .buy-section {
   padding-top: 30px;
 }
-
 
 /* About-book */
 /* create box3 and box4 custom class for about-book.html , for comp and mobile */
@@ -324,7 +338,7 @@ main {
 
 /* okragle rogi dla ty 4 zdjec */
 .rogi-rogi {
- border-radius: 12px; /* Zaokrąglenie rogów (dobierz wartość do przycisków, np. 8px - 16px) */
+  border-radius: 12px; /* Zaokrąglenie rogów (dobierz wartość do przycisków, np. 8px - 16px) */
   overflow: hidden;    /* Przycina rogi zdjęcia wewnątrz zaokrąglonego boksu */
 }
 
@@ -336,14 +350,13 @@ pomniejszanie, obracanie lub przesuwanie. */
 /* scale() – określa skalę elementu. 1.0 oznacza 100% 
 (oryginalny rozmiar),
  1.06 oznacza 106% (powiększenie o 6%). */
-
 .book-zoom {
-    transition: transform 0.4s ease;
-    cursor: pointer;
+  transition: transform 0.4s ease;
+  cursor: pointer;
 }
 
 .book-zoom:hover {
-    transform: scale(1.06);
+  transform: scale(1.06);
 }
 
 /* for this 4 box on bottom */
