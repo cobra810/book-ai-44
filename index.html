@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>44 Sectors</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/f1.svg" />
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -25,35 +26,93 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-between" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">About Book</a>
-              <a class="nav-link" href="#">Template and Course</a>
-              <a class="nav-link" href="#faq">FAQ</a>
-              <a class="btn btn-danger ms-lg-3" href="#buy">Buy Now</a>
-            </div>
-            
+          
+          
+
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+           <div class="navbar-nav mx-auto">
+            <a class="nav-link active" href="index.html">Home</a>
+            <a class="nav-link" href="about-book.html">About Book</a>
+            <a class="nav-link" href="free-template.html">Free Template and Course</a>
+            <a class="nav-link" href="faq.html">FAQ</a>
+           </div>
+
+            <a class="btn btn-danger" href="buynow.html">Buy Now</a>
+
+           </div>
           </div>
-        </div>
       </nav>
     </header>
-    <main class="container-fluid hero"> 
-       <div class="row align-items-center"> 
-        <div class="col-12 col-md-6 text-center p-3">
-           <img src="assets/images/book.jpg" alt="44 Sectors – Soo Jin" class="img-fluid" />
-        </div>
-        <div class="col-12 col-md-6 p-3 box2">
-           <h1>44 SECTORS</h1>
-             <p class="hero-lead">
-               Still watching AI disrupt your industry from the sidelines? Tired of hype
-              and books that explain everything except what to do? Stop trying to
-              &ldquo;learn AI&rdquo; — start building your 44-sector advantage.
-             </p>
-              <a href="#" class="btn btn-danger">Buy Now</a>
-              <a href="#" class="btn btn-outline-danger">See Details</a>
-           </div>
-        </div>
+    
+    
+    <main class="container pt-5 mt-4 hero"> 
+       <div class="row align-items-center pt-2 pb-5">
+  <!-- Lewa kolumna z okładką książki -->
+  <div class="col-12 col-md-6 text-center">
+    <div id="carouselExampleIndicators" class="carousel slide nice-rogi">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="assets/images/book1.jpg" alt="book life style" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/images/ccc.png" alt="AI will give new job" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/images/c1N1.png" alt="Quote of the day" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+  </div>
+
+  <!-- Prawa kolumna z tekstem i przyciskami -->
+  <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
+  <h1 class="display-5 fw-bold mb-2 text-center">44 SECTORS</h1>
+  <p class="lead text-muted mb-4 text-center">
+    Still watching AI disrupt your industry from the sidelines?<br>
+    Tired of hype and theory? Stop trying to "learn AI"<br>
+    — get the physical working tool designed<br>
+    to build your 44-sector advantage.
+  </p>
+
+  <!-- Minimalistyczny blok informacyjny -->
+  <div class="my-4 text-muted small text-center">
+    <p class="mb-2 text-center">Available on Amazon in English and Polish editions.</p>
+    <p class="mb-2 text-center">Secure ordering and fulfillment via Amazon.</p>
+    <p class="mb-4 fw-semibold text-dark text-center">Official Video course coming soon.</p>
+    <div class="pt-3 border-top mb-4">
+      <p class="mb-2">
+        <strong>Standard book price: £14.99</strong> — roughly one casual meal out
+        or about an hour of work.
+      </p>
+      <p class="small text-muted mb-0">
+        Less than what most people spend on small everyday extras without noticing —
+        skip one takeaway or impulse buy and get a working tool you can use right away.
+      </p>
+    </div>
+  </div>
+
+  <!-- PL: Najpierw baza w Bootstrapie (mt-0, py-2), a potem własny CSS do precyzyjnego ustawienia -->
+<!-- EN (UK): Bootstrap utilities first (mt-0, py-2), then custom CSS for fine-tuning -->
+<div class="d-flex gap-3 mt-0 justify-content-center hero-actions">
+  <a class="btn btn-danger btn-lg px-4 py-2 hero-btn" href="buynow.html">Buy Now</a>
+  <a class="btn btn-outline-secondary btn-lg px-4 py-2 hero-btn" href="about-book.html">See Details</a>
+</div>
+</div>
+</div>
     </main>
  
 <section class="features">
@@ -142,14 +201,68 @@
     </div>
   </div>
 </section>
+
+<!-- Sekcja z opiniami czytelników -->
+<!-- Sekcja z opiniami czytelników -->
+<section class="reviews">
+  <div class="container">
+    <h2 class="reviews-title text-center">What readers say</h2>
+    <div class="row">
+
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+        <!-- jump-box box sie rusza -->
+        <div class="review-card jump-box">
+          <img src="assets/images/review1.jpg" alt="Charlotte" class="review-photo">
+          <p class="review-text">"I run a 40-person team. Within a week I had three automations in production and a clear plan for the rest."</p>
+          <p class="review-author">Charlotte Hayes</p>
+          <p class="review-role">Operations Manager</p>
+          <p class="review-role">- Bristol</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+        <!-- jump-box box sie rusza -->
+        <div class="review-card jump-box">
+          <img src="assets/images/review2.jpg" alt="James" class="review-photo">
+          <p class="review-text">"The templates paid for the book in the first afternoon. I stopped guessing and started shipping."</p>
+          <p class="review-author">James Whitfield</p>
+          <p class="review-role">Founder, logistics startup</p>
+          <p class="review-role">- Leeds</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+        <!-- jump-box box sie rusza -->
+        <div class="review-card jump-box">
+          <img src="assets/images/review3.jpg" alt="Sophie" class="review-photo">
+          <p class="review-text">"As a student I finally understand where AI actually creates value — not just the hype everyone repeats."</p>
+          <p class="review-author">Sophie Bennett</p>
+          <p class="review-role">Business student</p>
+          <p class="review-role">- Manchester</p>
+        </div>
+      </div>
+       <!-- jump-box box sie rusza -->
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+        <div class="review-card jump-box">
+          <img src="assets/images/review4.jpg" alt="Oliver" class="review-photo">
+          <p class="review-text">"I read a lot of AI books. This is the first one I finished and immediately used at work."</p>
+          <p class="review-author">Oliver Grant</p>
+          <p class="review-role">Marketing Director</p>
+          <p class="review-role">- London</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
       
-<footer class="footer">
+<footer class="footer fixed-bottom">
   <div class="container-fluid p-3">
     <div class="row">
       <div class="col-12 col-md-3"><p>Copyright 2023</p></div>
-      <div class="col-12 col-md-3"><p>Contact: ...</p></div>
-      <div class="col-12 col-md-3"><p>Privacy Policy</p></div>
-      <div class="col-12 col-md-3"><p>facebook</p></div>
+      <div class="col-12 col-md-3"><p><a href="free-template.html">Contact</a></p></div>
+      <div class="col-12 col-md-3"><p><a href="privacypolicy.html">Privacy Policy</a></p></div>
+      <div class="col-12 col-md-3"><p><a href="https://facebook.com" target="_blank">facebook</a></p></div>
     </div>
   </div>
 </footer>

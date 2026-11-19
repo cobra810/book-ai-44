@@ -18,24 +18,36 @@ body {
   --bs-navbar-active-color: #fff;  
   background: #2B2B2B;
 }
+/*logo*/
+.navbar-brand,
+.navbar-brand:hover,
+.navbar-brand:focus {
+  color: #fff !important;
+}
 
 .navbar-collapse {
   display: flex;
-  
 }
 
+.navbar .nav-link.active {
+  color: #A55A38;
+  font-weight: 600;
+}
 /* Main */
 main {
   flex: 1;
 }
-
+main {
+  padding-top: 100px;
+}
+/* narzie kade to tutajmoze sie przyda to jest seci class hero padding: 20px 0; */ 
 .hero {
   background: #ECEAE4;
-  padding: 40px 0;
+  
 }
 
 .hero-text h1 {
-  font-size: 2.6rem;
+  font-size: 2.1rem;
   font-weight: 700;
   margin-bottom: 1rem;
   color: #2B2B2B;
@@ -43,21 +55,54 @@ main {
 
 .hero-lead {
   font-size: 1.05rem;
-  line-height: 1.6;
+  line-height: 1.5;
   color: #2B2B2B;
   max-width: 520px;
 }
-
-.hero-img {
-  max-width: 360px;
+/* Carousel for all images */
+.carousel-item img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+/* do okraglych rogow slide nice-rogi */
+.nice-rogi {
+  border-radius: 12px; /* Zaokrąglenie rogów (dobierz wartość do przycisków, np. 8px - 16px) */
+  overflow: hidden;    /* Przycina rogi zdjęcia wewnątrz zaokrąglonego boksu */
 }
 
-.box2 {
+
+/* old css for hero imag - just rfor remianing the old code in case of need */
+.hero-img {
+  width: 100%;
+  max-width: 220px-280px;
+  height: auto;
+}
+/* PL: margin-top przesuwa kontener na zewnątrz (tu lekko w górę), a padding zmienia wysokość wewnątrz przycisku */
+/* EN (UK): margin-top shifts the container externally (slightly up here), while padding adjusts height inside the button */
+.hero-actions {
+  margin-top: -8px;
+}
+
+.hero-btn {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+
+.hero-box1 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.hero-box2 {
   background: #ECEAE4;
   color: #2B2B2B;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
-/* section */
+/* section 1*/
 .features {
   background: #ab6a4c;
   color: #fff;
@@ -183,9 +228,153 @@ main {
   margin-bottom: 14px;
   line-height: 1.6;
 }
+/* sekcja 4 reviews */
+/* Sekcja z opiniami czytelników */
+
+.reviews {
+  background: #ECEAE4;
+  padding: 60px 0 120px;
+}
+
+.reviews-title {
+  margin-top: -30px;
+  margin-bottom: 40px;
+}
+
+
+.review-card {
+  background: #fff;
+  border-radius: 24px;
+  border-top: 6px solid #A55A38;   /* brązowy pasek u góry karty */
+  padding: 40px 30px;
+  height: 100%;
+  min-height: 420px;               /* wyższe karty */
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.review-photo {
+  width: 90px;                     /* większe zdjęcie */
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ab6a4c;       /* brązowa obwódka */
+  margin-bottom: 20px;
+}
+
+.review-text {
+  color: #2B2B2B;
+  line-height: 1.7;
+  font-size: 1.05rem;
+  margin-bottom: 22px;
+}
+
+.review-author {
+  color: #A55A38;
+  font-weight: 700;
+  margin: auto 0 0;
+}
+
+.review-role {
+  color: #2B2B2B;
+  font-size: 0.9rem;
+  opacity: 0.75;
+  margin: 0;
+}
+
+/* Sekcja z opiniami czytelników */
+.jump-box {
+  transition: transform 0.3s ease, 
+}
+
+
+.jump-box:hover {
+  /* OPCJA 1: Większe uniesienie w górę (np. zamiast -8px dajesz -16px lub -20px) */
+  transform: translateY(-26px);
+}
+
 
 /* Footer */
 .footer {
   background: #2B2B2B;
   color: #fff;
+}
+
+/* Site Buy NOW */
+.buy-section {
+  padding-top: 30px;
+}
+
+
+/* About-book */
+/* create box3 and box4 custom class for about-book.html , for comp and mobile */
+.custom-block {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+  .custom-block {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+
+/* okragle rogi dla ty 4 zdjec */
+.rogi-rogi {
+ border-radius: 12px; /* Zaokrąglenie rogów (dobierz wartość do przycisków, np. 8px - 16px) */
+  overflow: hidden;    /* Przycina rogi zdjęcia wewnątrz zaokrąglonego boksu */
+}
+
+/* Subtle zoom effect for book images */
+/* transform – odpowiada za przekształcanie elementu, 
+np. powiększanie, 
+pomniejszanie, obracanie lub przesuwanie. */
+
+/* scale() – określa skalę elementu. 1.0 oznacza 100% 
+(oryginalny rozmiar),
+ 1.06 oznacza 106% (powiększenie o 6%). */
+
+.book-zoom {
+    transition: transform 0.4s ease;
+    cursor: pointer;
+}
+
+.book-zoom:hover {
+    transform: scale(1.06);
+}
+
+/* for this 4 box on bottom */
+.custom-feature-card {
+  background-color: #f7f5f0; /* Nieco jaśniejszy odcień od tła sekcji, daje efekt głębi */
+  border: 1px solid rgba(163, 102, 70, 0.2); /* Delikatna ramka w kolorze dolnego paska */
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+/* Efekt po najechaniu kursorem */
+.custom-feature-card:hover {
+  transform: translateY(-6px); /* Płynne uniesienie karty w górę */
+  background-color: #ffffff;
+  border-color: #a36646; /* Wyraźniejszy brąz/terakota z dolnej sekcji */
+  box-shadow: 0 12px 24px rgba(45, 45, 45, 0.08);
+}
+
+.icon-wrapper {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgba(163, 102, 70, 0.12); /* Subtelne kółko w kolorze akcentu */
+  color: #a36646; /* Kolor samej ikony */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-feature-card:hover .icon-wrapper {
+  background-color: #a36646;
+  color: #ffffff;
 }
