@@ -1,6 +1,18 @@
+/* Root Colour Variables */
+:root {
+  --bg-main: #ECEAE4;
+  --bg-card-light: #f7f5f0;
+  --dark-primary: #2B2B2B;
+  --accent-primary: #A55A38;
+  --accent-secondary: #ab6a4c;
+  --accent-terracotta: #a36646;
+  --text-light: #ffffff;
+  --text-muted: #8a8a8a;
+}
+
 html,
 body {
-  background: #ECEAE4;
+  background: var(--bg-main);
 }
 
 body {
@@ -9,35 +21,32 @@ body {
   flex-direction: column;
 }
 
-
 @media (max-width: 767.98px) {
   body {
     padding-bottom: 120px;
   }
 }
-/* padding do policy */
+
+/* Policy Notice Padding */
 .notice-end {
   padding-bottom: 20px;
 }
 
-
-
-
 /* Navbar */
 .navbar {
-  --bs-navbar-color: #fff;
-  --bs-navbar-brand-color: #fff;
-  --bs-navbar-hover-color: #A55A38;
-  --bs-navbar-disabled-color: #8a8a8a;
-  --bs-navbar-active-color: #fff;  
-  background: #2B2B2B;
+  --bs-navbar-color: var(--text-light);
+  --bs-navbar-brand-color: var(--text-light);
+  --bs-navbar-hover-color: var(--accent-primary);
+  --bs-navbar-disabled-color: var(--text-muted);
+  --bs-navbar-active-color: var(--text-light);
+  background: var(--dark-primary);
 }
 
-/*logo*/
+/* Brand Logo */
 .navbar-brand,
 .navbar-brand:hover,
 .navbar-brand:focus {
-  color: #fff !important;
+  color: var(--text-light) !important;
 }
 
 .navbar-collapse {
@@ -45,60 +54,53 @@ body {
 }
 
 .navbar .nav-link.active {
-  color: #A55A38;
+  color: var(--accent-primary);
   font-weight: 600;
 }
 
-/* Main */
+/* Main Content */
 main {
   flex: 1;
-}
-
-main {
   padding-top: 100px;
 }
 
-/* narzie kade to tutajmoze sie przyda to jest seci class hero padding: 20px 0; */ 
+/* Hero Section */
 .hero {
-  background: #ECEAE4;
+  background: var(--bg-main);
 }
 
 .hero-text h1 {
   font-size: 2.1rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  color: #2B2B2B;
+  color: var(--dark-primary);
 }
 
 .hero-lead {
   font-size: 1.05rem;
   line-height: 1.5;
-  color: #2B2B2B;
+  color: var(--dark-primary);
   max-width: 520px;
 }
 
-/* Carousel for all images */
+/* Carousel Images */
 .carousel-item img {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
 
-/* do okraglych rogow slide nice-rogi */
+/* Rounded Corners for Carousel */
 .nice-rogi {
-  border-radius: 12px; /* Zaokrąglenie rogów (dobierz wartość do przycisków, np. 8px - 16px) */
-  overflow: hidden;    /* Przycina rogi zdjęcia wewnątrz zaokrąglonego boksu */
+  border-radius: 12px;
+  overflow: hidden;
 }
 
-/* old css for hero imag - just rfor remianing the old code in case of need */
 .hero-img {
   width: 100%;
-  max-width: 220px-280px;
   height: auto;
 }
 
-/* PL: margin-top przesuwa kontener na zewnątrz (tu lekko w górę), a padding zmienia wysokość wewnątrz przycisku */
-/* EN (UK): margin-top shifts the container externally (slightly up here), while padding adjusts height inside the button */
 .hero-actions {
   margin-top: -8px;
 }
@@ -114,16 +116,16 @@ main {
 }
 
 .hero-box2 {
-  background: #ECEAE4;
-  color: #2B2B2B;
+  background: var(--bg-main);
+  color: var(--dark-primary);
   padding-top: 12px;
   padding-bottom: 12px;
 }
 
-/* section 1*/
+/* Features Section */
 .features {
-  background: #ab6a4c;
-  color: #fff;
+  background: var(--accent-secondary);
+  color: var(--text-light);
   padding: 60px 0 40px;
 }
 
@@ -145,10 +147,10 @@ main {
   opacity: 0.9;
 }
 
-/* seckia 2*/
+/* Benefits Section */
 .benefits {
-  background: #2B2B2B;
-  color: #fff;
+  background: var(--dark-primary);
+  color: var(--text-light);
   padding: 70px 0;
 }
 
@@ -163,7 +165,7 @@ main {
 .benefits-line {
   width: 60px;
   height: 2px;
-  background: #fff;
+  background: var(--text-light);
   opacity: 0.7;
   margin: 0 auto 60px;
 }
@@ -182,7 +184,7 @@ main {
   font-size: 1.6rem;
   line-height: 1;
   margin-bottom: 18px;
-  color: #fff;
+  color: var(--text-light);
   opacity: 0.85;
 }
 
@@ -197,10 +199,10 @@ main {
   line-height: 1.7;
 }
 
-/*sekcja 3 */
+/* Fit Section */
 .fit {
-  background: #ECEAE4;
-  color: #2B2B2B;
+  background: var(--bg-main);
+  color: var(--dark-primary);
   padding: 70px 0;
 }
 
@@ -215,14 +217,14 @@ main {
 .fit-line {
   width: 60px;
   height: 2px;
-  background: #A55A38;
+  background: var(--accent-primary);
   margin: 0 auto 60px;
 }
 
 .fit-icon {
   text-align: center;
   margin-bottom: 24px;
-  color: #A55A38;
+  color: var(--accent-primary);
   font-size: 2.6rem;
   font-weight: 700;
   letter-spacing: 2px;
@@ -247,10 +249,9 @@ main {
   line-height: 1.6;
 }
 
-/* sekcja 4 reviews */
-/* Sekcja z opiniami czytelników */
+/* Reader Reviews Section */
 .reviews {
-  background: #ECEAE4;
+  background: var(--bg-main);
   padding: 60px 0 120px;
 }
 
@@ -260,12 +261,12 @@ main {
 }
 
 .review-card {
-  background: #fff;
+  background: var(--text-light);
   border-radius: 24px;
-  border-top: 6px solid #A55A38;   /* brązowy pasek u góry karty */
+  border-top: 6px solid var(--accent-primary);
   padding: 40px 30px;
   height: 100%;
-  min-height: 420px;               /* wyższe karty */
+  min-height: 420px;
   box-shadow: 0 6px 22px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
@@ -273,57 +274,55 @@ main {
 }
 
 .review-photo {
-  width: 90px;                     /* większe zdjęcie */
+  width: 90px;
   height: 90px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #ab6a4c;       /* brązowa obwódka */
+  border: 3px solid var(--accent-secondary);
   margin-bottom: 20px;
 }
 
 .review-text {
-  color: #2B2B2B;
+  color: var(--dark-primary);
   line-height: 1.7;
   font-size: 1.05rem;
   margin-bottom: 22px;
 }
 
 .review-author {
-  color: #A55A38;
+  color: var(--accent-primary);
   font-weight: 700;
   margin: auto 0 0;
 }
 
 .review-role {
-  color: #2B2B2B;
+  color: var(--dark-primary);
   font-size: 0.9rem;
   opacity: 0.75;
   margin: 0;
 }
 
-/* Sekcja z opiniami czytelników */
+/* Card Hover Lift Effect */
 .jump-box {
   transition: transform 0.3s ease;
 }
 
 .jump-box:hover {
-  /* OPCJA 1: Większe uniesienie w górę (np. zamiast -8px dajesz -16px lub -20px) */
   transform: translateY(-26px);
 }
 
 /* Footer */
 .footer {
-  background: #2B2B2B;
-  color: #fff;
+  background: var(--dark-primary);
+  color: var(--text-light);
 }
 
-/* Site Buy NOW */
+/* Buy Now Page */
 .buy-section {
   padding-top: 30px;
 }
 
-/* About-book */
-/* create box3 and box4 custom class for about-book.html , for comp and mobile */
+/* About Book Page */
 .custom-block {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -336,20 +335,12 @@ main {
   }
 }
 
-/* okragle rogi dla ty 4 zdjec */
 .rogi-rogi {
-  border-radius: 12px; /* Zaokrąglenie rogów (dobierz wartość do przycisków, np. 8px - 16px) */
-  overflow: hidden;    /* Przycina rogi zdjęcia wewnątrz zaokrąglonego boksu */
+  border-radius: 12px;
+  overflow: hidden;
 }
 
-/* Subtle zoom effect for book images */
-/* transform – odpowiada za przekształcanie elementu, 
-np. powiększanie, 
-pomniejszanie, obracanie lub przesuwanie. */
-
-/* scale() – określa skalę elementu. 1.0 oznacza 100% 
-(oryginalny rozmiar),
- 1.06 oznacza 106% (powiększenie o 6%). */
+/* Subtle Zoom Effect for Book Images */
 .book-zoom {
   transition: transform 0.4s ease;
   cursor: pointer;
@@ -359,19 +350,18 @@ pomniejszanie, obracanie lub przesuwanie. */
   transform: scale(1.06);
 }
 
-/* for this 4 box on bottom */
+/* Bottom Feature Cards */
 .custom-feature-card {
-  background-color: #f7f5f0; /* Nieco jaśniejszy odcień od tła sekcji, daje efekt głębi */
-  border: 1px solid rgba(163, 102, 70, 0.2); /* Delikatna ramka w kolorze dolnego paska */
+  background-color: var(--bg-card-light);
+  border: 1px solid rgba(163, 102, 70, 0.2);
   border-radius: 12px;
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
-/* Efekt po najechaniu kursorem */
 .custom-feature-card:hover {
-  transform: translateY(-6px); /* Płynne uniesienie karty w górę */
-  background-color: #ffffff;
-  border-color: #a36646; /* Wyraźniejszy brąz/terakota z dolnej sekcji */
+  transform: translateY(-6px);
+  background-color: var(--text-light);
+  border-color: var(--accent-terracotta);
   box-shadow: 0 12px 24px rgba(45, 45, 45, 0.08);
 }
 
@@ -379,8 +369,8 @@ pomniejszanie, obracanie lub przesuwanie. */
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color: rgba(163, 102, 70, 0.12); /* Subtelne kółko w kolorze akcentu */
-  color: #a36646; /* Kolor samej ikony */
+  background-color: rgba(163, 102, 70, 0.12);
+  color: var(--accent-terracotta);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -388,6 +378,6 @@ pomniejszanie, obracanie lub przesuwanie. */
 }
 
 .custom-feature-card:hover .icon-wrapper {
-  background-color: #a36646;
-  color: #ffffff;
+  background-color: var(--accent-terracotta);
+  color: var(--text-light);
 }
