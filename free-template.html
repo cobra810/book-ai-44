@@ -47,6 +47,8 @@
   <p class="text-center mb-0">Leave your e-mail and get the free template.</p>
   <div class="row justify-content-center">
     <div class="col-12 col-md-6">
+      <!-- form built with bootstrap components (form-control, form-check, btn)
+        using custom email validation (oninvalid, oninput) and a thank you modal pop-up in javascript -->
       <form id="contactForm">
         <div class="mb-2">
           <label for="email" class="form-label">E-mail</label>
@@ -91,6 +93,7 @@
       </form>
     </div>
   </div>
+  <!-- AI - HTML + bootstrap pop-up window shown after submitting the form -->
   <div class="modal fade" id="thankYouModal" tabindex="-1">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content text-center">
@@ -148,7 +151,9 @@
       integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu"
       crossorigin="anonymous"
     ></script>
-    <script>
+    <!-- AI - JS form submit handler: prevents page reload and shows the thankYouModal pop-up (user feedback) -->
+   
+   <script>
      document.getElementById('contactForm').addEventListener('submit', function (e) {
     e.preventDefault();
     new bootstrap.Modal(document.getElementById('thankYouModal')).show();
