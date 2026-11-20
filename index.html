@@ -2,53 +2,118 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="44 Sectors - Practical AI working tool, strategies, and 440 ready-to-use applications across 44 industries." />
-  <title>44 Sectors</title>
-  <link rel="icon" type="image/svg+xml" href="assets/favicon/f1.svg" />
+  <!-- made by ME and AI: <head> = page settings/assets (not visible page content) |
+  <!doctype html> = HTML5 doc | lang="en" = English | charset="utf-8" = UTF-8 text/symbols 
+  viewport = mobile/screen fit (scale=1=100%) | description = SEO search summary | 
+  robots = index/follow (crawl & index) | og:* = link preview card | title = browser tab title |
+  icon = tab SVG icon | bootstrap.min.css = minified Bootstrap CSS | style.css = custom CSS after Bootstrap -->
+  <!-- Semantic layout structure: head (page settings), header/nav (top menu), main (core content), section (topic blocks), footer (bottom info) -->
+
+
+  <!-- Character encoding: supports all letters and symbols -->
+  <meta charset="utf-8">
+
+  <!-- Mobile view: makes the page fit phones and tablets -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SEO: Page summary shown in Google search results -->
+  <meta name="description" content="44 Sectors - Practical AI working tool, strategies, and 440 ready-to-use applications across 44 industries.">
+
+  <!-- made by AI - SEO: Tells search engines to index this page and follow links -->
+  <meta name="robots" content="index, follow">
+
+  <!-- made by AI - Social media preview: title and description when shared on links -->
+  <!-- og: - Work only in a place where you put link www (social media ) -->
+  <meta property="og:title" content="44 Sectors - Practical AI Working Tool">
+  <meta property="og:description" content="Practical AI strategies and 440 ready-to-use applications across 44 industries.">
+  <meta property="og:type" content="website">
+
+  <!-- Browser tab title -->
+  <title>44 Sectors - Practical AI Working Tool</title>
+
+  <!-- Small icon shown on the browser tab -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon/f1.svg">
+
+  <!-- Bootstrap 5 CSS framework: provides grid, buttons, and layout styles -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS file: overrides Bootstrap with our own colors and fonts -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
   <!-- Header & Navigation -->
+  <!-- top menu bar (links to pages + mobile toggle button) -->
+  <!-- toggle = button that opens/closes the menu list on mobile -->
   <header>
+    <!-- nav = menu, fixed-top = stuck to top -->
+    <!-- navbar-expand-lg = show big screen: full menu in a row; small screen: hidden under menu button -->
+    <!-- data-bs-theme="dark" = changes color theme (does not add click action) -->
     <nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
+      <!-- container-fluid = full width of the screen; container = centered with side margins -->
       <div class="container-fluid">
+        <!-- logo, class - shows style/color , href - shows where will you go after click logo-->
         <a class="navbar-brand" href="index.html">AI 44 SECTORS</a>
+        <!-- button collapse - shows when screen narrows(small), 
+         data-bs-target="#navbarNavAltMarkup" - shows which menu opens - this is bootstrap -->
+        <!-- aria* helper for screen readers for people with disabilities (e.g. reads text out loud for blind users)-->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- span - shows style/color for collapse menu toggle (hamburger icon, 3 lines) -->
           <span class="navbar-toggler-icon"></span>
         </button>
-
+        <!-- div - full container(box) with all things in (logo, home, about...) 
+         id - this key for bootstrap  -->
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <!-- div= box(home...) , class=style/color, mx-auto=in this case, it centers it -->
           <div class="navbar-nav mx-auto">
+            <!-- nav-link active = show color when you click(home, about...), 
+             active = work on href link(home, about...)
+             aria= for disabled -->
             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             <a class="nav-link" href="about-book.html">About Book</a>
             <a class="nav-link" href="free-template.html">Free Template and Course</a>
             <a class="nav-link" href="faq.html">FAQ</a>
           </div>
+          <!-- btn btn-danger(red) = bootstrap red button style/color (can override in css) -->
           <a class="btn btn-danger" href="buynow.html">Buy Now</a>
         </div>
       </div>
     </nav>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero Section Main-->
+  <!-- main = main content box, 
+  container = centered width box, 
+  pt = pt-2 = inner top; pb-5 = inner bottom; py-3 = inner top+bottom; 
+  px-3 = inner left+right pe-3 = inner right; ps-3 = inner left; 
+  mt = mt-2 = outer top; mb-5 = outer bottom; my-3 = outer top+bottom; 
+  mx-3 = outer left+right; ps-3 = outer right; pe-3 = outer left;
+  hero = main top banner/section -->
+
   <main class="container pt-5 mt-4 hero">
+    <!-- row = horizontal grid row, align-items-center = vertical center -->
     <div class="row align-items-center pt-2 pb-5">
       <!-- Left Column: Book Carousel -->
+       <!-- col-12 = 12/12 (1 box per row); col-2 = 2/12 (6 boxes per row); 
+        col-md-3 = 3/12 (4 boxes per row) from >=768px width up 
+        col-md-4 = 4/12 (3 boxes per row) from >=768px width up 
+        sm >=576px, md >=768px, lg >=992px, xl >=1200px, xxl >=1400px -->
       <div class="col-12 col-md-6 text-center">
+        <!-- Bootstrap carousel with slide transition, ID for controls, and custom nice-rogi rounded corners -->
         <div id="carouselExampleIndicators" class="carousel slide nice-rogi">
+          <!-- Dots/dashes at the bottom of the carousel to switch slides -->
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
               aria-current="true" aria-label="Slide 1"></button>
+              <!-- First indicator dash: jumps to slide index 0 on bootstrap = #carouselExampleIndicators,
+                marked active for style & screen readers -->
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
               aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
               aria-label="Slide 3"></button>
           </div>
+          <!-- carousel-inner wraps slides; carousel-item is one slide; d-block + w-100 makes image full-width block -->
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="assets/images/book1.jpg" alt="44 Sectors book lifestyle view" class="d-block w-100">
@@ -60,6 +125,7 @@
               <img src="assets/images/c1N1.png" alt="Quote of the day from 44 Sectors" class="d-block w-100">
             </div>
           </div>
+          <!-- Previous slide button on left edge of #carouselExampleIndicators; visually-hidden label for screen readers -->
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
             data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -74,6 +140,9 @@
       </div>
 
       <!-- Right Column: Title, Description & Actions -->
+
+      <!-- Bootstrap Flex: d-flex = flex (parent), flex-column = vertical stack (children under each other),
+      justify-content-center = vertical center, fw-bold = bold font, text-muted = muted color -->
       <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
         <h1 class="display-5 fw-bold mb-2 text-center">44 SECTORS</h1>
         <p class="lead text-muted mb-4 text-center">
@@ -93,6 +162,7 @@
               <strong>Standard book price: £14.99</strong> — roughly one casual meal out
               or about an hour of work.
             </p>
+            <!-- mb-0 = guarantees it sticks to the bottom (no gap); without mb-0 there can be a slight gap -->
             <p class="small text-muted mb-0">
               Less than what most people spend on small everyday extras without noticing —
               skip one takeaway or impulse buy and get a working tool you can use right away.
@@ -102,6 +172,7 @@
 
         <!-- Hero Action Buttons -->
         <div class="d-flex gap-3 mt-0 justify-content-center hero-actions">
+          <!-- btn-lg = large button (bigger font and padding than standard btn) -->
           <a class="btn btn-danger btn-lg px-4 py-2 hero-btn" href="buynow.html">Buy Now</a>
           <a class="btn btn-outline-secondary btn-lg px-4 py-2 hero-btn" href="about-book.html">See Details</a>
         </div>
@@ -109,11 +180,12 @@
     </div>
   </main>
 
-  <!-- Features Section -->
+  <!-- Features Section, section 1 under main content -->
   <section class="features">
     <div class="container">
       <div class="row text-center">
         <div class="col-12 col-md-4 mb-4">
+          <!-- triangle icon (no .feature-mark rule in CSS, inherits style from parent) -->
           <div class="feature-mark">▲</div>
           <h3>Explore 44 Industries</h3>
           <p>From finance and healthcare to logistics, energy and retail — the book maps
@@ -138,7 +210,7 @@
     </div>
   </section>
 
-  <!-- Benefits Section -->
+  <!-- Benefits Section, section 2 - with dark background -->
   <section class="benefits">
     <div class="container">
       <h2 class="benefits-title">With this book<br>you will gain new skills:</h2>
@@ -165,7 +237,8 @@
     </div>
   </section>
 
-  <!-- Target Audience Fit Section -->
+  <!-- Target Audience Fit Section, Section 3 -->
+   <!-- fit = my custom CSS class (not Bootstrap), sets background, text color, and 70px padding -->
   <section class="fit">
     <div class="container">
       <h2 class="fit-title">Check if<br>44 SECTORS is for you:</h2>
@@ -201,13 +274,15 @@
     </div>
   </section>
 
-  <!-- Reader Reviews Section -->
+  <!-- Reader Reviews Section, section 4 -->
+   <!-- Bootstrap: container, text-center, row | my CSS: reviews, reviews-title -->
   <section class="reviews">
     <div class="container">
       <h2 class="reviews-title text-center">What readers say</h2>
       <div class="row">
 
         <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <!-- jump-box = card lifts up on hover; loading="lazy" = loads image only on scroll -->
           <div class="review-card jump-box">
             <img src="assets/images/review1.jpg" alt="Portrait of Charlotte Hayes" class="review-photo" loading="lazy">
             <p class="review-text">"I run a 40-person team. Within a week I had three automations in production and a clear plan for the rest."</p>
@@ -251,7 +326,8 @@
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- footer = my CSS (dark background, white text); 
+   fixed-bottom = Bootstrap (pins permanently to bottom of screen) -->
   <footer class="footer fixed-bottom">
     <div class="container-fluid p-3">
       <div class="row">
@@ -270,6 +346,7 @@
       </div>
     </div>
   </footer>
+  <!-- Bootstrap script for interactive page elements; placed at the bottom so the page loads first -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu"

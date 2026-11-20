@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>44 Sectors</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
@@ -40,13 +40,21 @@
         </div>
       </nav>
     </header>
-    <!-- section -->
+    <!-- Main in about book page -->
+    <!-- adding the loading="lazy" attribute inside the img tags- 4 box -->
     <main class="container hero py-5">
+    <!-- section 1 (box 1 left side - photo) -->
 
   <div class="row align-items-center mb-5">
     <div class="col-12 col-md-6 text-center">
-      <img src="assets/images/book777.jpg" alt="44 Sectors" class="hero-img book-zoom rogi-rogi" />
+      <img src="assets/images/book777.jpg" alt="44 Sectors" class="hero-img book-zoom rogi-rogi" loading="lazy">
     </div>
+
+    <!-- section 1 (box 2 right side - text) -->
+     <!-- right column of the About Book section: layout (col-12 col-md-6), 
+      spacing (mb-3), and list styling come from Bootstrap (no custom CSS) -->
+      <!-- ul = bullets, ol = numbered list, 
+       li = list item, a = link, p = paragraph, strong = important bold -->
     <div class="col-12 col-md-6">
       <h1 class="mb-3">About the Book</h1>
       <h3>Product details</h3>
@@ -79,7 +87,7 @@
     </div>
   </div>
 
-  <!-- BLOK 2: tekst lewo, zdjęcie prawo -->
+   <!-- section 2  (Box 1 left side - text) -->
   <div class="row align-items-center mb-5">
     <div class="col-12 col-md-6 order-2 order-md-1">
       <h3>What's inside the book?</h3>
@@ -115,16 +123,19 @@
         live—ensuring this book actively works for you rather than sitting on a shelf.
       </p>
     </div>
+
+    <!-- section 2 (box 2 right side - photo) -->
     <div class="col-12 col-md-6 order-1 order-md-2 text-center">
-      <img src="assets/images/book2.png" alt="44 Sectors" class="hero-img book-zoom rogi-rogi" />
+      <img src="assets/images/book2.png" alt="44 Sectors" class="hero-img book-zoom rogi-rogi" loading="lazy" >
     </div>
   </div>
 
-  <!-- BLOK 3: zdjęcie lewo, tekst prawo -->
+  <!-- section 3 (box 1 left side - photo) -->
   <div class="row align-items-center mt-5 mb-5 custom-block">
     <div class="col-12 col-md-6 text-center">
-      <img src="assets/images/book3.png" alt="44 Sectors" class="hero-img book-zoom rogi-rogi" />
+      <img src="assets/images/book3.png" alt="44 Sectors" class="hero-img book-zoom rogi-rogi" loading="lazy" >
     </div>
+    <!-- section 3 (box 2 right side - text) -->
     <div class="col-12 col-md-6">
       <h2>Why Choose the Physical Edition?</h2>
       <p>
@@ -139,7 +150,7 @@
     </div>
   </div>
 
-  <!-- BLOK 4: tekst lewo, zdjęcie prawo -->
+  <!-- section 4 (box 1 left side - text) -->
 
   <div class="row align-items-center mt-5 mb-5 custom-block">
     <div class="col-12 col-md-6 order-2 order-md-1">
@@ -157,19 +168,26 @@
         <strong>The Ultimate Synergy:</strong> Use the physical book on your desk to sketch your strategy and take notes, while using the video masterclass to master the technical execution. It’s the ultimate combination for maximum impact.
       </p>
     </div>
+    <!-- section 4 (box 2 right side - photo) -->
     <div class="col-12 col-md-6 order-1 order-md-2 text-center">
-      <img src="assets/images/book4.png" alt="44 Sectors" class="hero-img book-zoom rogi-rogi" />
+      <img src="assets/images/book4.png" alt="44 Sectors" class="hero-img book-zoom rogi-rogi" loading="lazy">
     </div>
   </div>
 
-  <!-- 4 SEKCJE NA DOLE -->
+  <!-- section 5 = 5 boxes) -->
   <section class="py-5" style="background-color: #efece6;">
   <div class="container">
     <div class="row g-4">
       
       <!-- Box 1 -->
       <div class="col-12 col-md-6 col-lg-3">
+        <!-- card = Bootstrap card container; h-100 = 100% height (equal-height cards); 
+         custom-feature-card = custom CSS style; fs-4 = font size scale 1-6 (not left/right alignment) -->
+<div class="card h-100 custom-feature-card text-center p-4">
+  <div class="icon-wrapper mb-3 fs-4 fw-bold">1</div>
+</div>
         <div class="card h-100 custom-feature-card text-center p-4">
+          <!-- inside the card: vertical layout layers + the circular number badge centered inside -->
           <div class="card-body d-flex flex-column align-items-center">
             <div class="icon-wrapper mb-3 fs-4 fw-bold">
              1

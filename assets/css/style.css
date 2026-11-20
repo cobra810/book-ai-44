@@ -27,12 +27,12 @@ body {
   }
 }
 
-/* Policy Notice Padding */
+/* Policy page Policy Notice Padding */
 .notice-end {
   padding-bottom: 20px;
 }
 
-/* Navbar */
+/* index pages Navbar */
 .navbar {
   --bs-navbar-color: var(--text-light);
   --bs-navbar-brand-color: var(--text-light);
@@ -42,7 +42,7 @@ body {
   background: var(--dark-primary);
 }
 
-/* Brand Logo */
+/* index pages Brand Logo */
 .navbar-brand,
 .navbar-brand:hover,
 .navbar-brand:focus {
@@ -83,14 +83,14 @@ main {
   max-width: 520px;
 }
 
-/* Carousel Images */
+/* index pages Carousel Images */
 .carousel-item img {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
 
-/* Rounded Corners for Carousel */
+/* index pages Rounded Corners for Carousel */
 .nice-rogi {
   border-radius: 12px;
   overflow: hidden;
@@ -122,7 +122,7 @@ main {
   padding-bottom: 12px;
 }
 
-/* Features Section */
+/* index pages Features Section section 1 under main content */
 .features {
   background: var(--accent-secondary);
   color: var(--text-light);
@@ -147,7 +147,7 @@ main {
   opacity: 0.9;
 }
 
-/* Benefits Section */
+/* index pages Benefits Section, section 2 - with dark background */
 .benefits {
   background: var(--dark-primary);
   color: var(--text-light);
@@ -199,7 +199,7 @@ main {
   line-height: 1.7;
 }
 
-/* Fit Section */
+/* index pages Fit Section, Section 3 */
 .fit {
   background: var(--bg-main);
   color: var(--dark-primary);
@@ -249,7 +249,7 @@ main {
   line-height: 1.6;
 }
 
-/* Reader Reviews Section */
+/* index pages Reviews Section, section 4 */
 .reviews {
   background: var(--bg-main);
   padding: 60px 0 120px;
@@ -302,7 +302,7 @@ main {
   margin: 0;
 }
 
-/* Card Hover Lift Effect */
+/* index pages Card Hover Lift Effect */
 .jump-box {
   transition: transform 0.3s ease;
 }
@@ -322,7 +322,7 @@ main {
   padding-top: 30px;
 }
 
-/* About Book Page */
+/* About Book Page ABOUT BOOK*/
 .custom-block {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -340,7 +340,7 @@ main {
   overflow: hidden;
 }
 
-/* Subtle Zoom Effect for Book Images */
+/* about book page Zoom Effect for Book Images */
 .book-zoom {
   transition: transform 0.4s ease;
   cursor: pointer;
@@ -350,7 +350,7 @@ main {
   transform: scale(1.06);
 }
 
-/* Bottom Feature Cards */
+/* About book page Bottom Feature Cards */
 .custom-feature-card {
   background-color: var(--bg-card-light);
   border: 1px solid rgba(163, 102, 70, 0.2);
