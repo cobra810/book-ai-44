@@ -381,3 +381,10 @@ main {
   background-color: var(--accent-terracotta);
   color: var(--text-light);
 }
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .hero .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
