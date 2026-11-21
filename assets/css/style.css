@@ -1,13 +1,18 @@
 /* Root Colour Variables */
+/* ============================================
+   ZMIENNE KOLORÓW (jedno miejsce na cały projekt)
+   Zmieniasz wartość tutaj => zmienia się na WSZYSTKICH stronach.
+   Użycie w kodzie: background: var(--bg-main);
+   ============================================ */
 :root {
-  --bg-main: #ECEAE4;
-  --bg-card-light: #f7f5f0;
-  --dark-primary: #2B2B2B;
-  --accent-primary: #A55A38;
-  --accent-secondary: #ab6a4c;
-  --accent-terracotta: #a36646;
-  --text-light: #ffffff;
-  --text-muted: #8a8a8a;
+  --bg-main: #ECEAE4;          /* Główne tło strony (jasny beż) */
+  --bg-card-light: #f7f5f0;    /* Tło kart / jaśniejsze boksy */
+  --dark-primary: #2B2B2B;     /* Ciemny tekst i navbar */
+  --accent-primary: #A55A38;   /* Główny akcent (brąz) - nagłówki, linki */
+  --accent-secondary: #ab6a4c; /* Drugi akcent (jaśniejszy brąz) - sekcje */
+  --accent-terracotta: #a36646;/* Akcent terakota - ikony, hover */
+  --text-light: #ffffff;       /* Biały tekst na ciemnym tle */
+  --text-muted: #8a8a8a;       /* Wyciszony szary tekst */
 }
 
 html,
